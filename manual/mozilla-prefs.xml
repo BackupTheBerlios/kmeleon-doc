@@ -1,0 +1,4832 @@
+<!-- ============================================================ -->
+<sect1 id="mozilla-prefs"><title>Mozilla Preferences</title>
+<!-- ============================================================ -->
+
+<para>
+
+</para>
+
+<variablelist>
+
+<varlistentry><term><varname>browser.cache.check_doc_frequency</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>3</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.disk.capacity</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>50000</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.disk.parent_directory</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>$prefsDir</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.memory.capacity</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>4096</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.download.dir</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.restrictedpopups.Window.open</varname></term>
+<listitem>
+<literallayout>Type: <type></type>
+Default: <literal></literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.restrictedpopups.Window.sites</varname></term>
+<listitem>
+<literallayout>Type: <type></type>
+Default: <literal></literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_open_during_load</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.useragent.override</varname></term>
+<listitem>
+<literallayout>Type: <type></type>
+Default: <literal></literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>image.animation_mode</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"normal"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>javascript.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.cookieBehavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.version</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"1.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.image.imageBehavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.autoconfig_url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ftp</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ftp_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.gopher</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.gopher_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.http</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.http_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.no_proxies_on</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"localhost, 127.0.0.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks_version</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>5</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ssl</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ssl_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.type</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.show_print_progress</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>security.enable_java</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>signon.rememberSignons</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.background_color</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>  (#RRGGBB)
+Default: <literal></literal></literallayout>
+<para>
+  Defines the color used for the background of web pages when the
+  color is not defined by the page. RRGGBB equals the RGB code to
+  define the color desired.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_document_colors</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal></literal></literallayout>
+<para>
+  Defines whether the browser uses the colors specified in the web
+  page for display. Set to true to allow web pages to use colors
+  specified in page.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_document_fonts</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>  (0, 1)
+Default: <literal></literal></literallayout>
+<para>
+  Defines whether the browser uses the fonts specified in the web page
+  for display. Set to 1 to allow web pages to use fonts specified in
+  page.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_system_colors</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal></literal></literallayout>
+<para>
+  Defines whether the browser uses the system colors to display web
+  pages. Set to true to use system colors.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.visited_color</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>  (#RRGGBB)
+Default: <literal></literal></literallayout>
+<para>
+  Defines the color used for visited links on web pages when the color
+  is not defined by the page. RRGGBB equals the RGB code to define the
+  color desired. See this page for more information.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.underline_anchors</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>True</literal></literallayout>
+<para>
+  Defines whether links on web pages are underlined. Set to true to
+  underline links.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.default</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>  (serif/sans-serif)
+Default: <literal></literal></literallayout>
+<para>
+  Defines the default font style used by K-Meleon to display text on
+  web pages.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.name.serif.x-western</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal></literal></literallayout>
+<para>
+  Sets the font used to display text as defined by the web page for
+  western serif font. Examples would include: Times New Roman and
+  Georgia.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.name.sans-serif.x-western</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal></literal></literallayout>
+<para>
+  Sets the font used to display text as defined by the web page for
+  western sans-serif font. Examples would include: Arial and Verdana.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.size.variable.x-western</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>16</literal></literallayout>
+<para>
+  Sets the font size, in pixels, used to display text as defined by
+  the web page for western variable font. Default size is 16 pixels.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.size.fixed.x-western</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>13</literal></literallayout>
+<para>
+  Sets the font size, in pixels, used to display text as defined by
+  the web page as western fixed text. Default size is 13 pixels.
+</para>
+</listitem>
+</varlistentry>
+
+<!--
+<varlistentry><term><varname></varname></term>
+<listitem>
+<literallayout>Type: <type></type>
+Default: <literal></literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname></varname></term>
+<listitem>
+<literallayout>Type: <type></type>
+Default: <literal></literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+-->
+
+</variablelist>
+
+
+<!-- ............................................................ -->
+<sect2 id="all-js"><title>all.js</title>
+<!-- ............................................................ -->
+
+<para>
+  The following list contains all preferences found in all.js.
+  There is no guarantee that these will have any effect on K-Meleon.
+</para>
+
+<variablelist>
+
+<varlistentry><term><varname>startup.homepage_override_url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.chromeURL</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/content/navigator.xul"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.search.url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://cgi.netscape.com/cgi-bin/url_search.cgi?search="</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>keyword.URL</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://keyword.netscape.com/keyword/"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>keyword.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.useragent.locale</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.useragent.contentlocale</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.useragent.misc</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"rv:1.2b"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.browser</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.mail</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.news</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.editor</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.compose</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.startup.addressbook</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.open_location.last_url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>general.open_location.last_window_choice</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>backups.number_of_prefs_copies</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.startup.page</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.startup.homepage</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>	   "chrome://navigator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.startup.homepage.count</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.startup.homepage_override.1</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.startup.autoload_homepage</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.enable</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.disk.enable</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.disk.capacity</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>50000</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.memory.enable</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.memory.capacity</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>4096</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.disk_cache_ssl</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.cache.check_doc_frequency</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>3</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_document_fonts</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_document_colors</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_system_colors</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.foreground_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#000000"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.background_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#FFFFFF"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.force_inline_alttext</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.normal_lineheight_calc_control</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.show_image_placeholders</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.enable_marquee</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.anchor_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#0000EE"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.visited_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#551A8B"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.underline_anchors</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.blink_allowed</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.use_focus_colors</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.focus_background_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#117722"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.focus_text_color</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"#ffffff"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.focus_ring_width</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.display.focus_ring_on_anything</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.autoFill</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.showPopup</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.showSearch</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.matchOnlyTyped</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.chrome.site_icons</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.chrome.favicons</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.chrome.toolbar_tips</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.chrome.toolbar_style</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.toolbars.showbutton.bookmarks</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.toolbars.showbutton.go</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.toolbars.showbutton.home</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.toolbars.showbutton.print</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.toolbars.showbutton.search</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.turbo.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.helperApps.alwaysAsk.force</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.helperApps.neverAsk.saveToDisk</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.helperApps.neverAsk.openFile</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.browsewithcaret</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.warn_on_browsewithcaret</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.tabfocus</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>7</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.usetexttospeech</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.usebrailledisplay</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.accesskeycausesactivation</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.typeaheadfind</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.typeaheadfind.linksonly</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.typeaheadfind.startlinksonly</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>accessibility.typeaheadfind.timeout</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>5000</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.prefWindowModal</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.show_about_as_stupid_modal_window</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.download.progressDnldDialog.keepAlive</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.download.progressDnldDialog.enable_launch_reveal_buttons</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.defaulturl</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.opensidebarsearchpanel</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.last_search_category</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"NC:SearchCategory?category=urn:search:category:1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.mode</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.powermode</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.basic.min_ver</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"0.0"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.autocomplete.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.urlbar.clickSelectsAll</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.history_expire_days</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>9</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.history.grouping</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"day"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.sessionhistory.max_entries</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>50</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.translation.service</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://www.teletranslator.com:8120/?AlisUI=frames_ex/moz_home&amp;alis_info=moz&amp;AlisTargetURI="</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.translation.serviceDomain</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"teletranslator.com"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.ratings_enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.pages_must_be_rated</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.disable_for_this_session</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.reenable_for_this_session</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.service.http___home_netscape_com_default_rating.service_enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.PICS.service.http___home_netscape_com_default_rating.s</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.frames.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.forms.submit.backwards_compatible</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.autoHide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.forceHide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.loadInBackground</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.opentabfor.middleclick</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.opentabfor.urlbar</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.opentabfor.windowopen</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.tabs.opentabfor.bookmarks</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>view_source.syntax_highlight</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>view_source.wrap_long_lines</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>nglayout.widget.mode</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>nglayout.widget.gfxscrollbars</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>nglayout.events.showHierarchicalHover</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>nglayout.events.dispatchLeftClickOnly</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>nglayout.debug.enable_xbl_forms</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>slider.snapMultiplier</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>6</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>application.use_ns_plugin_finder</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.related.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.related.autoload</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.related.provider</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://www-rl.netscape.com/wtgn?"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.related.disabledForDomains</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.goBrowsing.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.fixup.alternate.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.fixup.alternate.prefix</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"www."</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.fixup.alternate.suffix</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>".com"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.search.defaultenginename</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://communicator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_headerleft</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"&amp;T"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_headercenter</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_headerright</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"&amp;U"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_footerleft</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"&amp;PT"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_footercenter</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_footerright</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"&amp;D"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.show_print_progress</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.use_global_printsettings</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.use_native_print_dialog</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.save_print_settings</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.whileInPrintPreview</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.always_cache_old_pres</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_edge_top</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_edge_left</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_edge_right</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>print.print_edge_bottom</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default_policynames</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"mailnews"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.policynames</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMException.code</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMException.message</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMException.name</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMException.result</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMException.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.back</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.current</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalBrowserRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.forward</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.go</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.item</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalBrowserRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.next</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalBrowserRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.previous</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalBrowserRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.History.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalBrowserRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.HTMLDocument.close</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.HTMLDocument.open</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.HTMLDocument.write</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.HTMLDocument.writeln</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Location.hash.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Location.href.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Location.reload</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Location.replace</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Navigator.preference</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Navigator.preferenceinternal.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalPreferencesRead"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Navigator.preferenceinternal.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"UniversalPreferencesWrite"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.blur</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.close</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.closed</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.Components</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.document</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.focus</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.frames</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.fullScreen</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.history</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.length</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.location</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.opener</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.parent</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.self</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.top</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.Window.window</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.sites</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"mailbox: imap: news:"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.attributes.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.baseURI.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.data.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.getAttribute</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.getNamedItem</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.host.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.hostname.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.href.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.innerHTML.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.lowSrc.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.nodeValue.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.pathname.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.protocol.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.src.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.substringData.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.text.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.*.title.get</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.DOMException.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.HTMLAnchorElement.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.HTMLDocument.domain</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.HTMLDocument.URL</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Location.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Range.toString</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.blur</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.focus</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.innerWidth.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.innerHeight.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.moveBy</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.moveTo</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.name.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.outerHeight.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.outerWidth.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.resizeBy</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.resizeTo</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.screenX.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.screenY.set</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.mailnews.Window.sizeToContent</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.XMLHttpRequest.channel</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.DOMParser.parseFromStream</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"noAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.block.target_new_window</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_cookie_get</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_cookie_set</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_image_src_set</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_open_during_load</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_flip</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_move_resize</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_status_change</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.titlebar</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.close</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.toolbar</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.location</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.directories</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.personalbar</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.menubar</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.scrollbars</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.resizable</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.minimizable</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>dom.disable_window_open_feature.status</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>javascript.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>javascript.allow.mailnews</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>javascript.options.strict</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>javascript.options.showInConsole</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>privacy.popups.policy</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>privacy.popups.usecustom</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>advanced.always_load_images</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>security.enable_java</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>advanced.mailftp</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>image.animation_mode</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"normal"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>offline.startup_state</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>offline.send.unsent_messages</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>offline.download.download_messages</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>offline.prompt_synch_on_exit</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>offline.news.download.use_days</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocol-handler.external.hcp</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocol-handler.external.vbscript</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocol-handler.external.javascript</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocol-handler.external.ms-help</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocol-handler.external.vnd.ms.radio</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.smtp_server</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"mail"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.pop_server</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"mail"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.protocols.useSystemDefaults</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.version</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"1.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.proxy.version</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"1.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.use-cache</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.default-socket-type</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.keep-alive</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.proxy.keep-alive</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.keep-alive.timeout</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>300</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.max-connections</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>24</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.max-connections-per-server</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>8</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.max-persistent-connections-per-server</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.max-persistent-connections-per-proxy</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>4</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.request.max-start-delay</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>10</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.connect.timeout</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>30</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.request.timeout</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>120</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.accept.default</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,video/x-mng,image/png,image/jpeg,image/gif;q=0.2,text/css,*/*;q=0.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.sendRefererHeader</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.sendSecureXSiteReferrer</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.redirection-limit</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>20</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.accept-encoding</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"gzip, deflate, compress;q=0.9"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.pipelining</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.proxy.pipelining</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.pipelining.firstrequest</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.pipelining.maxrequests</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>4</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.http.proxy.ssl.connect</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.enableIDN</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.standard-url.escape-utf8</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.ftp.idleConnectionTimeout</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>300</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.dir.format</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.prefetch-next</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.nntp_server</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"news.mozilla.org"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.socks_server</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.socks_serverport</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1080</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.hosts.socks_conf</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.image.imageBehavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.image.warnAboutImages</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.autoconfig_url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.type</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ftp</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ftp_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.gopher</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.gopher_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.news</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.news_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.http</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.http_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.wais</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.wais_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ssl</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.ssl_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks_port</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.socks_version</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>5</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.proxy.no_proxies_on</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"localhost, 127.0.0.1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.online</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.cookieBehavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.disableCookieForMailNews</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.warnAboutCookies</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.lifetime.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+      Setting only this pref to true means that cookies will not be
+      saved, but it will act like the browser is accepting cookies
+      (same effect as making cookies.txt read-only).
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.lifetime.behavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+       This pref requires that the <varname>network.cookie.lifetime.enabled</varname> pref be set. If this pref is
+       used, then cookies will have a maximum lifetime of <varname>network.cookie.lifetime.days</varname> days.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.lifetime.days</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>90</literal></literallayout>
+<para>
+       This pref changes the maximum lifetime to a different number,
+       if <varname>network.cookie.lifetime.behavior</varname> is set.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.p3p</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"ffffaaaa"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.cookie.p3plevel</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>signon.rememberSignons</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>signon.expireMasterPassword</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.enablePad</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>network.enableIDN</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>converter.html2txt.structs</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>converter.html2txt.header_strategy</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.captureForms</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.notified</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.TutorialFromMenu</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.Server</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.Samples</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.version</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"1"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.crypto</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.crypto.autocompleteoverride</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.namePanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.addressPanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.phonePanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.creditPanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.employPanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>wallet.miscPanel.hide</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>imageblocker.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.accept_languages</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.accept_charsets</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"iso-8859-1,*,utf-8"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.collationOption</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-platform/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.menuitems.alwaysappendacceskeys</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.static</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.more1</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.more2</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.more3</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.more4</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.more5</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.mailedit</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.cache</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.mailview.cache</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.composer.cache</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charsetmenu.browser.cache.size</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>5</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charset.detector</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.charset.default</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-platform/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.content.langcode</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://communicator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.locale.matchOS</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>intl.fallbackCharsetList.ISO-8859-1</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"windows-1252"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>font.language.group</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator/locale/navigator.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mail.signature_file</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mail.directory</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>images.dither</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"auto"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>news.directory</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>security.directory</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>autoupdate.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.editor.disabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>spellchecker.dictionary</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>signed.applets.codebase_principal_support</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>security.checkloaduri</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>security.xpconnect.plugin.unrestricted</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>ui.key.accelKey</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>17</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>ui.key.generalAccessKey</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>18</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>ui.key.menuAccessKey</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>18</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>ui.key.menuAccessKeyFocuses</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>ui.key.saveLink.shift</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>middlemouse.paste</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>middlemouse.openNewWindow</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>middlemouse.contentLoadURL</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>middlemouse.scrollbarPosition</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>clipboard.autocopy</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withnokey.action</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withnokey.numlines</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withnokey.sysnumlines</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withcontrolkey.action</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withcontrolkey.numlines</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withcontrolkey.sysnumlines</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withshiftkey.action</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withshiftkey.numlines</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withshiftkey.sysnumlines</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withaltkey.action</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>2</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withaltkey.numlines</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>mousewheel.withaltkey.sysnumlines</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>profile.confirm_automigration</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>profile.seconds_until_defunct</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>-1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>custtoolbar.personal_toolbar_folder</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>""</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>sidebar.customize.all_panels.url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://sidebar-rdf.netscape.com/%LOCALE%/sidebar-rdf/%SIDEBAR_VERSION%/all-panels.rdf"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>sidebar.customize.directory.url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://dmoz.org/Netscape/Sidebar/"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>sidebar.customize.more_panels.url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"http://dmoz.org/Netscape/Sidebar/"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>sidebar.num_tabs_in_view</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>8</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>prefs.converted-to-utf8</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.direction</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.texttype</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.controlstextmode</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.clipboardtextmode</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>3</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.numeral</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.support</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>bidi.characterset</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.throbber.url</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://navigator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>layout.word_select.eat_space_to_next_word</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>layout.word_select.stop_at_punctuation</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>layout.frames.force_resizability</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>capability.policy.default.SOAPCall.invokeVerifySourceHeader</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"allAccess"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>alerts.slideIncrement</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>1</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>alerts.slideIncrementTime</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>10</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>alerts.totalOpenTime</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>4000</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>alerts.height</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>50</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>update_notifications.enabled</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>update_notifications.provider.0.frequency</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>7</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>update_notifications.provider.0.datasource</varname></term>
+<listitem>
+<literallayout>Type: String<type></type>
+Default: <literal>"chrome://communicator-region/locale/region.properties"</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.downloadmanager.behavior</varname></term>
+<listitem>
+<literallayout>Type: Integer<type></type>
+Default: <literal>0</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>plugin.override_internal_types</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>plugin.expose_full_path</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>False</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>browser.popups.showPopupBlocker</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term><varname>viewmanager.do_doublebuffering</varname></term>
+<listitem>
+<literallayout>Type: Boolean<type></type>
+Default: <literal>True</literal></literallayout>
+<para>
+
+</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+
+</sect2>
+
+</sect1>

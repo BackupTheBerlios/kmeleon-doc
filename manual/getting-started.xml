@@ -1,0 +1,248 @@
+<chapter id="getting-started"><title>Getting Started</title>
+
+<!-- ============================================================ -->
+<sect1 id="obtaining-kmeleon"><title>Obtaining K-Meleon</title>
+<!-- ============================================================ -->
+
+<para>
+  K-Meleon is distributed as a single executable installer which will 
+  extract all files.
+  Download K-Meleon file from the homepage;
+  <ulink type="http" url="http://kmeleon.sourceforge.net/download.php">http://kmeleon.sourceforge.net/download.php</ulink>.
+  Select Full Package with Installer for version 0.7.
+</para>
+
+<para>
+  When prompted, save the file onto your computer. Be sure to remember
+  the download location that you selected.  
+</para>
+
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="installation"><title>Installation</title>
+<!-- ============================================================ -->
+
+<para>
+  If you have previously installed K-Meleon, make sure to uninstall
+  the prior version before continuing the installation for this
+  version.
+</para>
+
+<para>
+  Go to the location where you saved the kmeleon06.exe file and
+  double-click the file to start the Setup process. At any time in the
+  process you need to stop the K-Meleon installation, click on the
+  Cancel button.  
+</para>
+
+<para>
+  When the License Agreement appears, read the license
+  information. Click on Next to continue the installation.
+</para>
+
+<!-- ............................................................ -->
+<sect2 id="installer"><title>K-Meleon Installer</title>
+<!-- ............................................................ -->
+
+<para>
+  Setup next provides you with a list of Installation Options.   
+</para>
+
+<para>
+  <itemizedlist>
+  <listitem><para>K-Meleon (required)</para></listitem>
+  <listitem><para>K-Meleon loader (for faster startup times)</para></listitem>
+  <listitem><para>Standard Plugins</para></listitem>
+  <listitem><para>Bookmarks Plugin (for Netscape users)</para></listitem>
+  <listitem><para>IE Favorites (for IE users)</para></listitem>
+  <listitem><para>Opera Hotlist Plugin (for Opera users)</para></listitem>
+  <listitem><para>Start Menu and Desktop Icons</para></listitem>
+  <listitem><para>Always open HTML with K-Meleon</para></listitem>
+  </itemizedlist>
+</para>
+
+<para>
+  There are two types of installation Standard and Custom. In the
+  Standard installation, most of the options are set to install or are
+  enabled by default.  The Standard installation is selected by
+  default. Most users will want to leave the Standard components and
+  settings enabled 
+</para>
+
+<para>
+  You also have the option of doing a Custom installation. Setup
+  requires you to install the K-Meleon browser.  All other components
+  and settings available through Setup are optional.  A description of
+  some of the components is available in the FAQ. If you wish to
+  remove a component through Setup, uncheck the box listed next to the
+  option.  If you choose not to install a component, it can not be
+  re-enabled in the browser so consider the impact of not selecting
+  items. You can also disable components through the browser after it
+  has been installed.
+</para>
+
+<para>
+  When you have completed reviewing all of the components and
+  settings, click on Next.
+</para>
+
+<para>
+  Setup will indicate the location where it will install K-Meleon.
+  Typically, it will install in C:\Program Files\K-Meleon.  If you
+  would like to install K-Meleon in another location, use the Browse
+  button to locate the directory where you would like K-Meleon
+  installed. When you are ready to continue, click on Next.
+</para>
+
+<para>
+  Setup will now copy over the necessary files for K-Meleon. A screen
+  will display the files being copied onto your computer.
+</para>
+
+<para>
+  When the installation process is completed, Setup will close and
+  K-Meleon will launch to display a Read Me file. A short-cut for
+  K-Meleon will also be available on your desktop, if you enabled that
+  in the Installation Options.
+</para>
+
+
+</sect2>
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="running"><title>Running K-Meleon</title>
+<!-- ============================================================ -->
+
+<para> 
+  K-Meleon can be started either by double clicking the icon on the
+  desktop, or by selecting it from the start menu. (Look for the
+  green lizard icon)
+</para>
+
+<!-- ............................................................ -->
+<sect2 id="locate-bookmarks"><title>Locate bookmark files</title>
+<!-- ............................................................ -->
+
+<para>
+  The first time you run K-Meleon you might be presented with one or
+  two dialog boxes asking you questions.
+  If you have installed the plugins for Netscape bookmarks or Opera
+  hotlists you can decide whether to share your saved links between
+  your earlier browser or start anew.
+  K-Meleon can either create a new bookmarks or hotlist file or let
+  you locate where your current file is.
+</para>
+
+<para>
+<itemizedlist>
+<listitem>
+  <para>
+	Netscape bookmark plugin : "Bookmark file not found. Do you
+	wish to locate it?"
+  </para> 
+  <para>
+	If you have Netscape installed on your computer and you wish
+	to be able to use your Netscape bookmarks in K-Meleon, you
+	will need to click yes and find the bookmarks file. Otherwise
+	click no, and K-Meleon will create a new bookmark file
+	instead.
+  </para>
+</listitem>
+<listitem>
+  <para>
+	Opera Hotlist Plugin : "Would you like to set your hotlist file
+	to the default value?"
+  </para>
+  <para>
+	If you do not have Opera installed, and the following line is
+	where you wish to store your Opera hotlist file, then click
+	yes. Otherwise, if you wish to use your hotlist from Opera,
+	you will need to click No, and locate the file.
+  </para>
+</listitem>
+</itemizedlist>
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="choose-profile"><title>Choose a profile</title>
+<!-- ............................................................ -->
+
+<para>
+  The "Manage Profiles" window may also appear when starting K-Meleon
+  after the first time.
+</para>
+
+<para>
+  Profiles enable you to have different settings and configuration
+  (like how K-Meleon looks and acts) as well as separate
+  bookmarks/favorites/hotlist for the different users or people who
+  may be using K-Meleon.
+</para>
+
+<para>
+  You can use the new, rename and delete buttons to add, change or
+  remove the names of the people who will be using K-Meleon. Then
+  whenever K-Meleon starts the user would just click on his/her name,
+  and then click ok to load K-Meleon with that user's settings.
+</para>
+
+<para>
+  If however you don't want different settings for different users, or
+  you are the only person that will be using K-Meleon, you can uncheck
+  the "ask at startup" box, and then click Ok. This will prevent the
+  profiles window from appearing at startup. You can still reach the
+  profiles manager from within K-Meleon; under the Edit menu.
+</para>
+
+</sect2>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="uninstall"><title>Uninstall</title>
+<!-- ============================================================ -->
+
+<orderedlist>
+<listitem> 
+  <para>
+    Go to Settings - Control Panel - Add/Remove Programs
+  </para>
+</listitem>
+<listitem> 
+  <para>
+    Select K-Meleon (remove only).
+  </para>
+</listitem>
+<listitem> 
+  <para>
+    Click on the Add/Remove button.
+  </para>
+</listitem>
+<listitem> 
+  <para>
+    The K-Meleon Uninstall program will prompt you with a confirmation
+    before uninstalling K-Meleon.
+  </para>
+</listitem>
+<listitem> 
+  <para>
+    If you have stored user profiles, the Uninstall program will
+    prompt you if you want to remove the profiles.
+  </para>
+</listitem>
+<listitem> 
+  <para>
+    Click on the Close button to close out the uninstall program when
+    it is completed.
+  </para>
+</listitem>
+</orderedlist>
+
+</sect1>
+
+</chapter>

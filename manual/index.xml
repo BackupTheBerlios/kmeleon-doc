@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY INTRODUCTION		SYSTEM "introduction.xml">
+  <!ENTITY GETTING-STARTED	SYSTEM "getting-started.xml">
+  <!ENTITY KMELEON-BASICS	SYSTEM "kmeleon-basics.xml">
+  <!ENTITY CONFIGURATION	SYSTEM "configuration.xml">
+  <!ENTITY INTERNATIONALIZATION	SYSTEM "internationalization.xml">
+  <!ENTITY ADVANCED-USAGE	SYSTEM "advanced-usage.xml">
+  <!ENTITY REFERENCE		SYSTEM "reference.xml">
+  <!ENTITY MACRO-REFERENCE	SYSTEM "macro-reference.xml">
+  <!ENTITY KMELEON-PREFS	SYSTEM "kmeleon-prefs.xml">
+  <!ENTITY MOZILLA-PREFS	SYSTEM "mozilla-prefs.xml">
+  <!ENTITY MISCELLANY		SYSTEM "miscellany.xml">
+]>
+
+<book id="index">
+  <bookinfo>
+    <title>K-Meleon User's Guide and Reference Manual</title>
+<!--    
+    <authorgroup>
+      <author>
+        <firstname>Ulf</firstname>
+        <surname>Erikson</surname>
+        <affiliation>
+          <address><email>ulferikson@fastmail.fm</email></address>
+        </affiliation>
+      </author>
+    </authorgroup>
+-->
+
+    <copyright>
+      <year>2002</year>
+      <holder>the K-Meleon Documentation Project</holder>
+    </copyright>
+
+    <legalnotice id="legalnotice">
+      <para>
+        Permission is granted to copy, distribute and/or modify this
+        document under the terms of the <citetitle>GNU Free
+        Documentation License</citetitle>, Version 1.1 or any later
+        version published by the Free Software Foundation with no
+        Invariant Sections, no Front-Cover Texts, and no Back-Cover
+        Texts. You may obtain a copy of the <citetitle>GNU Free
+        Documentation License</citetitle> from the Free Software
+        Foundation by visiting <ulink type="http"
+        url="http://www.fsf.org">their Web site</ulink> or by writing
+        to: Free Software Foundation, Inc., 59 Temple Place - Suite
+        330, Boston, MA 02111-1307, USA.
+      </para>
+      <para>
+        Many of the names used by companies to distinguish their
+        products and services are claimed as trademarks. Where those
+        names appear in any K-Meleon documentation, and those trademarks
+        are made aware to the members of the K-Meleon Documentation
+        Project, the names have been printed in caps or initial caps.
+      </para>
+    </legalnotice>
+
+    <pubdate role="rcs">2002-08-31</pubdate>
+
+    <abstract>
+
+      <para>
+	<ulink type="http" url="documentation-project.html">The
+	K-Meleon documentation project</ulink> is an effort to write
+        a complete manual for K-Meleon. Participation is open to
+        anyone willing to help. All contributions, large or small, are
+        very welcome. And very much needed! You don't have to write a
+        full chapter; a small subsection is good enough. Or simply
+        extend/rewrite/correct the text of an exisiting part. No
+        programming knowledge is required, which makes it a great way
+        for non-programmers to contribute to K-Meleon.
+      </para>
+
+<!--
+      <para>
+        This is version 0.1 of the K-Meleon manual, describing version
+        0.7 of K-Meleon.  The manual guides new users through the
+        basic steps of K-Meleon, and provide experienced users with a
+        thorough reference manual.  As a complement, the <ulink
+        type="http" url="http://kmeleon.sourceforge.net">K-Meleon home
+        page</ulink> is filled with shorter tutorials aimed to help
+        the novice perform a number of common tasks.
+      </para>
+-->
+
+      <para>
+      <note>
+      <para>
+	Please send all contributing comments, corrections and
+	additions, as plain text files, to the <ulink
+  	url="mailto:kmeleon-dev@lists.sourceforge.net">K-Meleon Developers
+  	mailing list</ulink>.
+      </para>
+      </note>
+      </para>
+    </abstract>
+
+  </bookinfo>
+
+  &INTRODUCTION;
+  &GETTING-STARTED;
+  &KMELEON-BASICS;
+  &CONFIGURATION;
+  &INTERNATIONALIZATION;
+  &ADVANCED-USAGE;
+  &REFERENCE;
+  &MISCELLANY;
+
+</book>

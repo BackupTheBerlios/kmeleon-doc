@@ -1,0 +1,53 @@
+<chapter id="miscellany"><title>Miscellany</title>
+
+<!-- ============================================================ -->
+<sect1 id="acknowledgements"><title>Acknowledgements</title>
+<!-- ============================================================ -->
+
+<para>
+The NGLayout engine (Gecko) is developed under the <ulink type="http"
+url="http://www.mozilla.org">Mozilla project</ulink>.
+</para>
+
+<para>
+The following people have contributed in creating K-Meleon:
+<itemizedlist>
+<listitem><para>Jeff Doozan</para></listitem>
+<listitem><para>Ulf Erikson</para></listitem>
+<listitem><para>Brian Harris</para></listitem>
+<listitem><para>Rob Johnson</para></listitem>
+<listitem><para>Mark Liffiton</para></listitem>
+<listitem><para>Andrew Mutch</para></listitem>
+<listitem><para>Chack Nanga</para></listitem>
+<listitem><para>Sebastian Speath</para></listitem>
+<listitem><para>Christophe Thibault</para></listitem>
+</itemizedlist>
+</para>
+
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="about"><title>About this document</title>
+<!-- ============================================================ -->
+
+<para>
+This document was written in SGML using DocBook, and then rendered
+with jade and the cygnus-both style sheet.
+</para> 
+
+<para>
+The following people have contributed in creating the K-Meleon manual:
+<itemizedlist>
+<listitem><para>Ulf Erikson</para></listitem>
+<listitem><para>Joshua Holman</para></listitem>
+<listitem><para>Andrew I. Mutch</para></listitem>
+<listitem><para>Brooks Moses</para></listitem>
+<listitem><para>pobelly</para></listitem>
+<listitem><para>Michael Sachner</para></listitem>
+<listitem><para>Zarneth</para></listitem>
+</itemizedlist>
+</para>
+
+</sect1>
+
+</chapter>

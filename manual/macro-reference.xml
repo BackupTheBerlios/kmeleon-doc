@@ -1,0 +1,374 @@
+<!-- ============================================================ -->
+<sect1 id="macro-lang"><title>Macro Language</title>
+<!-- ============================================================ -->
+
+<para>
+The macros.cfg file is parsed top to bottom. It's only read in
+once. That means you have to define things above where they are
+used. This will make sense to programmers Everyone else, don't worry
+about it.
+</para>
+
+<para>
+??? Maybe this is only true for variables, not macros.. ???
+</para>
+
+<!-- ............................................................ -->
+<sect2 id="macro-comments"><title>Comments</title>
+<!-- ............................................................ -->
+
+<para>
+A line that starts with # is a comment and is ignored.
+</para>
+
+<programlisting>
+    # this is a comment
+</programlisting>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="macro-variables"><title>Variables and Macros</title>
+<!-- ............................................................ -->
+
+<para>
+Variables are not declared explicitely, but must have a name starting
+with a dollar sign. A variable can either be global, accessable from
+by macros, or local to a specific macro. Before a variable can be used
+in an expression it must be assigned a value. Boolean values, integer
+values and string values are available.
+</para>
+
+<programlisting>
+    $x = 0;
+    $y = "A text string";
+??? $z = true;			# is this really True or just "true"? ???
+</programlisting>
+
+<para>
+When needed, a variable is automatically be converted from a string to
+an integer, or the other way around.
+</para>
+
+<programlisting>
+    $x = 1 + "2";
+    $y = "The value of x is " . x;
+</programlisting>
+
+<para>
+Macro declarations consist of a macro name followed by a compound of
+statements to execute for that macro. An optional assignment of a
+string value to 'menu' can be used to set the text shown when the
+macros is used in menus.
+</para>
+
+<programlisting>
+    example {
+	menu = "Menu text";
+	$x = 0;
+    }
+</programlisting>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="macro-expressions"><title>Expressions</title>
+<!-- ............................................................ -->
+
+<para>
+The following operators are available:
+</para>
+
+<programlisting>
+  +	addition	$x = 7 + 3;		10
+  -	subtraction	$x = 7 - 3;		4
+  *	multiplication	$x = 7 * 3;		21
+  /	division	$x = 7 / 3;		2
+  %	remainder	$x = 7 % 3;		1
+  ==	equal		$x = 7 == 3;		0	??? false ???
+  !=	not equal	$x = 7 != 3;		1	??? true ???
+  .     concatenation   $x = 7 . 3;		73
+  ? :   conditionals    $x = $y==1 ? 2:3;       2 if y == 1; 3 otherwise
+</programlisting>
+
+<para>
+Parenthesis can be used to alter the evaluation order.
+</para>
+
+<para>
+!!! What about precedence? !!!
+</para>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<sect3 id="macro-strings"><title>Strings</title>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<para>
+Strings should be enclosed in double quotes although not required
+unless the string contains operators. A backslash is used as escape
+character to enter special characters.
+</para>
+
+<programlisting>
+  \\   backslash
+  \n   newline
+  \r   carrige return
+  \"   quotation mark
+</programlisting>
+
+</sect3>
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="macro-global-vars"><title>Global Variables</title>
+<!-- ............................................................ -->
+
+<para>
+  There is a number of predefined global variables to let K-Meleon
+  macros access some global state information.
+</para>
+
+<variablelist>
+<varlistentry><term>$URL</term>
+<listitem>
+<para>
+  URL for current page.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>$LinkURL</term>
+<listitem>
+<para>
+  URL for current link.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>$ImageURL</term>
+<listitem>
+<para>
+  URL for current image.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry><term>$FrameURL</term>
+<listitem>
+<para>
+  URL for current frame.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="macro-statements"><title>Statements</title>
+<!-- ............................................................ -->
+
+<para>
+Several statements can be lined up on the same line with a semicolon
+in between.
+</para>
+
+<programlisting>
+    $x = 0; $y = "A text string";
+</programlisting>
+
+<para>
+!!! Statements may not span several lines! !!!
+</para>
+
+<programlisting>
+    $error = 1 +
+	1;
+</programlisting>
+
+<para>
+Special statements:
+</para>
+
+<programlisting>
+  open( URL );
+	Open url in the current browser window.
+
+  opennew( URL );
+	Open url in a new browser window.
+
+  openbg( URL );
+	Open url in a new background window.
+
+  setpref( TYPE, "user.preference.variable", VALUE);
+	Sets user preferences.
+	TYPE = BOOL | INT | STRING
+
+  $VALUE = getpref( TYPE, "user.preference.variable" );
+	Gets a user preference.
+	TYPE = BOOL | INT | STRING
+
+  togglepref( TYPE, "user.preference.variable", VALUE1, VALUE2, ... );
+	Toggles a user preference between a series of values.
+	TYPE = BOOL | INT | STRING
+	(booleans always toggle between true and false)
+ 
+ exec( PROGRAM );
+	Execute an external program.
+
+  id( COMMAND_ID );
+	Send a message id to the current window.
+	See the complete list of command IDs.
+
+  plugin( PLUGIN, COMMAND );
+  pluginmsg( PLUGIN, COMMAND, ARGS );
+  $REPLY = pluginmsgex( PLUGIN, COMMAND, ARGS, TYPE );
+	Run a plugin command.
+	See the complete list of plugin commands.
+
+  statusbar( TEXT );
+	Show the message text on the status bar.
+
+  alert( MESSAGE, TITLE, ICON );
+	Show a messagebox.
+	ICON = EXCLAIM | INFO | STOP | QUESTION
+
+  $RESULT = confirm( MESSAGE, TITLE, BUTTONS, ICON );
+	Show a messagebox and ask for confirmation.
+	BUTTONS = RETRYCANCEL | YESNO | YESNOCANCEL | ABORTRETRYIGNORE;
+	ICON = EXCLAIM | INFO | STOP | QUESTION
+	RESULT = OK | YES | NO |ABORT | RETRY | IGNORE | 0
+
+  $VALUE = prompt( PROMPT, TITLE, DEFAULT_STRING );
+	Show a modal 'prompt' dialog that returns a string value.
+
+  $TEXT = getclipboard();
+	Get and return data from the clipboard.
+
+  setclipboard( TEXT );
+	Set data to the clipboard.
+
+  $SUB = gensub( r, s, h, t );
+	search the target string t for matches of the string r.  If h
+	is a string beginning with g or G, then replace all matches
+	of r with s.  Otherwise, h is a number indicating which match
+	of r to replace.  The modified string is returned as the
+	result of the function.
+
+  $SUB = gsub( r, s, t );
+	for each substring matching the string r in the string t,
+	substitute the string s, and return the modified string.
+
+  $I = index( s, t );
+	returns the index of the string t in the string s, or -1 if t
+	is not present.
+
+  $LEN = length( s );
+	returns the length of the string s.
+
+  $SUB = sub( t, s, t );
+	just like gsub(), but only the first matching substring is
+	replaced.
+
+  $SUB = substr( s, i [, n] );
+	returns the at most n-character substring of s starting at i.
+	If n is omitted, the rest of s is used.
+
+  $BASE = basename( NAME [, SUFFIX] );
+	Returns NAME with any leading directory components removed.
+	If specified, also remove a trailing SUFFIX.
+
+  $DIR = dirname( NAME );
+	Returns NAME with its trailing /component removed; if NAME
+	contains no /'s, output `.' (meaning the current directory).
+
+  $HOST = hostname( URL );
+	Returns hostname of given URL.
+
+  macros( MACRO );
+	Execute another macro.
+
+  &amp;MACRO
+	Alias for 'macros(MACRO)'
+</programlisting>
+
+<para>
+  Not all parameters are required for alert, confirm and prompt commands.
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="macro-plugin-cmd"><title>Plugin commands for macros</title>
+<!-- ............................................................ -->
+
+<variablelist>
+
+<varlistentry id="macro-bookmarks-cmd"><term>bookmarks</term>
+<listitem>
+<programlisting>
+plugin(bookmarks, "Config");
+plugin(bookmarks, "Add");
+plugin(bookmarks, "AddToolbar");
+plugin(bookmarks, "Edit");
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-favorites-cmd"><term>favorites</term>
+<listitem>
+<programlisting>
+plugin(favorites, "Config");
+plugin(favorites, "Add");
+plugin(favorites, "Edit");
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-fullscreen-cmd"><term>fullscreen</term>
+<listitem>
+<programlisting>
+plugin(fullscreen);
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-layers-cmd"><term>layers</term>
+<listitem>
+<programlisting>
+plugin(layers, "Config");
+plugin(layers, "Open");
+plugin(layers, "OpenLink");
+plugin(layers, "OpenLinkBg");
+plugin(layers, "Next");
+plugin(layers, "Prev");
+plugin(layers, "Last");
+plugin(layers, NUMBER);
+plugin(layers, "Close");
+plugin(layers, "CloseAll");
+plugin(layers, "CloseAllOther");
+plugin(layers, "OpenWindow");
+plugin(layers, "CloseWindow");
+pluginmsg(layers, "OpenURL", url);
+pluginmsg(layers, "OpenURLBg", url);
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-toolbars-cmd"><term>toolbars</term>
+<listitem>
+<programlisting>
+$bChecked = pluginmsgex(toolbars, "IsButtonChecked", "TOOLBAR_ID, BUTTON_ID", INT)
+$bEnabled = pluginmsgex(toolbars, "IsButtonEnabled", "TOOLBAR_ID, BUTTON_ID", INT)
+pluginmsg(toolbars, "CheckButton", "TOOLBAR_ID, BUTTON_ID, [0|1]")
+pluginmsg(toolbars, "EnableButton", "TOOLBAR_ID, BUTTON_ID, [0|1]")
+pluginmsg(toolbars, "SetButtonImage", "TOOLBAR_ID, BUTTON_ID, [HOT|COLD|DEAD], Path/to/new/image.bmp[0]")
+</programlisting>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+</sect1>
