@@ -42,7 +42,7 @@ values and string values are available.
 <programlisting>
     $x = 0;
     $y = "A text string";
-??? $z = true;			# is this really True or just "true"? ???
+??? $z = true;                  # is this really True or just "true"? ???
 </programlisting>
 
 <para>
@@ -57,9 +57,13 @@ an integer, or the other way around.
 
 <para>
 Macro declarations consist of a macro name followed by a compound of
-statements to execute for that macro. An optional assignment of a
-string value to 'menu' can be used to set the text shown when the
-macros is used in menus.
+statements to execute for that macro. A macro can call another macro,
+and a macro can also be accessed from a menu or a keyboard combination.
+</para>
+
+<para>
+An optional assignment of a string value to 'menu' can be used to set
+the text shown when the macros is used in menus.
 </para>
 
 <programlisting>
@@ -67,6 +71,18 @@ macros is used in menus.
 	menu = "Menu text";
 	$x = 0;
     }
+</programlisting>
+
+<para>
+The following macros are automatically called on special events.
+</para>
+
+<programlisting>
+  OnStartup
+  OnOpenWindow
+  OnCloseWindow
+  OnLoad
+  OnQuit
 </programlisting>
 
 </sect2>
@@ -113,6 +129,7 @@ character to enter special characters.
   \\   backslash
   \n   newline
   \r   carrige return
+  \t   tab
   \"   quotation mark
 </programlisting>
 
@@ -129,6 +146,7 @@ character to enter special characters.
 </para>
 
 <variablelist>
+
 <varlistentry><term>$URL</term>
 <listitem>
 <para>
@@ -160,6 +178,15 @@ character to enter special characters.
 </para>
 </listitem>
 </varlistentry>
+
+<varlistentry><term>$TITLE</term>
+<listitem>
+<para>
+  Title for current page.
+</para>
+</listitem>
+</varlistentry>
+
 </variablelist>
 
 
@@ -214,7 +241,7 @@ Special statements:
 	TYPE = BOOL | INT | STRING
 	(booleans always toggle between true and false)
  
- exec( PROGRAM );
+  exec( PROGRAM );
 	Execute an external program.
 
   id( COMMAND_ID );
@@ -260,16 +287,16 @@ Special statements:
 	for each substring matching the string r in the string t,
 	substitute the string s, and return the modified string.
 
+  $SUB = sub( r, s, t );
+	just like gsub(), but only the first matching substring is
+	replaced.
+
   $I = index( s, t );
 	returns the index of the string t in the string s, or -1 if t
 	is not present.
 
   $LEN = length( s );
 	returns the length of the string s.
-
-  $SUB = sub( t, s, t );
-	just like gsub(), but only the first matching substring is
-	replaced.
 
   $SUB = substr( s, i [, n] );
 	returns the at most n-character substring of s starting at i.
@@ -310,8 +337,10 @@ Special statements:
 <programlisting>
 plugin(bookmarks, "Config");
 plugin(bookmarks, "Add");
+plugin(bookmarks, "AddLink");
 plugin(bookmarks, "AddToolbar");
 plugin(bookmarks, "Edit");
+$url = pluginmsgex( "bookmarks", "FindNick", $nickname, STRING );
 </programlisting>
 </listitem>
 </varlistentry>
@@ -321,7 +350,9 @@ plugin(bookmarks, "Edit");
 <programlisting>
 plugin(favorites, "Config");
 plugin(favorites, "Add");
+plugin(favorites, "AddLink");
 plugin(favorites, "Edit");
+$url = pluginmsgex( "favorites", "FindNick", $nickname, STRING );
 </programlisting>
 </listitem>
 </varlistentry>
@@ -330,6 +361,27 @@ plugin(favorites, "Edit");
 <listitem>
 <programlisting>
 plugin(fullscreen);
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-history-cmd"><term>history</term>
+<listitem>
+<programlisting>
+plugin(history, "Config");
+plugin(history, "View");
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="macro-hotlist-cmd"><term>hotlist</term>
+<listitem>
+<programlisting>
+plugin(hotlist, "Config");
+plugin(hotlist, "Add");
+plugin(hotlist, "AddLink");
+plugin(hotlist, "Edit");
+$url = pluginmsgex( "hotlist", "FindNick", $nickname, STRING );
 </programlisting>
 </listitem>
 </varlistentry>
@@ -352,6 +404,10 @@ plugin(layers, "OpenWindow");
 plugin(layers, "CloseWindow");
 pluginmsg(layers, "OpenURL", url);
 pluginmsg(layers, "OpenURLBg", url);
+$num = pluginmsgex( "layers", "NumberOfWindows", "", INT );
+$num = pluginmsgex( "layers", "NumberOfLayersInWindow", $num, INT);
+$urls = pluginmsgex( "layers", "GetLayersInWindow", $num, STRING);
+pluginmsg( "layers", "ReplaceLayersInWindow", $urls);
 </programlisting>
 </listitem>
 </varlistentry>
@@ -371,4 +427,5 @@ pluginmsg(toolbars, "SetButtonImage", "TOOLBAR_ID, BUTTON_ID, [HOT|COLD|DEAD], P
 </variablelist>
 
 </sect2>
+
 </sect1>

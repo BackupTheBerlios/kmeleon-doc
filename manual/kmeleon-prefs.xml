@@ -70,19 +70,6 @@ Default: <literal>-1</literal></literallayout>
 </listitem>
 </varlistentry>
 
-<varlistentry id="display-backgroundImage"><term><varname>kmeleon.display.backgroundImage</varname></term>
-<listitem>
-<literallayout>Type: <type>String</type>
-Default: <literal>""</literal></literallayout>
-<para>
-  Defines a path to the image file for the Tool Bar background.
-</para>
-<para>
-  See also: <link linkend='display-backgroundImageEnabled'><varname>kmeleon.display.backgroundImageEnabled</varname></link>.
-</para>
-</listitem>
-</varlistentry>
-
 <varlistentry id="display-backgroundImageEnabled"><term><varname>kmeleon.display.backgroundImageEnabled</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
@@ -90,9 +77,6 @@ Default: <literal>True</literal></literallayout>
 <para>
   Controls whether the background image for the Tool Bar is displayed.
   Set to true to display the image.
-</para>
-<para>
-  See also: <link linkend='display-backgroundImage'><varname>kmeleon.display.backgroundImage</varname></link>.
 </para>
 </listitem>
 </varlistentry>
@@ -164,6 +148,16 @@ Default: <literal>0</literal></literallayout>
 Default: <literal>""</literal></literallayout>
 <para>
   Sets the URL used by the <link linkend='display-newWindowOpenAs'><varname>kmeleon.display.newWindowOpenAs</varname></link> preference when set to open to a Specified URL.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="display-urlbartitle"><term><varname>kmeleon.display.URLbarTitle</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>"URL:"</literal></literallayout>
+<para>
+  Title for the URL-bar.
 </para>
 </listitem>
 </varlistentry>
@@ -407,6 +401,71 @@ Default: <literal><replaceable>$profilesDir</replaceable>\bookmarks.html</litera
 </listitem> 
 </varlistentry>
 
+<varlistentry id="bookmarks-chevron"><term><varname>kmeleon.plugins.bookmarks.chevron</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>True</literal></literallayout>
+<para>
+  Whether the bookmarks toolbar should show the bookmarks menu under a chevron.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="bookmarks-editdialog-height"><term><varname>kmeleon.plugins.bookmarks.editdialog.height</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry id="bookmarks-editdialog-left"><term><varname>kmeleon.plugins.bookmarks.editdialog.left</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="bookmarks-editdialog-maximized"><term><varname>kmeleon.plugins.bookmarks.editdialog.maximized</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="bookmarks-editdialog-top"><term><varname>kmeleon.plugins.bookmarks.editdialog.top</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="bookmarks-editdialog-width"><term><varname>kmeleon.plugins.bookmarks.editdialog.width</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="bookmarks-editdialog-zoom"><term><varname>kmeleon.plugins.bookmarks.editdialog.zoom</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="bookmarks-load"><term><varname>kmeleon.plugins.bookmarks.load</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
@@ -470,6 +529,52 @@ Default: <literal>""</literal></literallayout>
 </listitem>
 </varlistentry>
 
+<varlistentry id="favorites-buttonIcons"><term><varname>kmeleon.plugins.favorites.buttonIcons</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>True</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-buttonMaxWidth"><term><varname>kmeleon.plugins.favorites.buttonMaxWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>35</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-buttonMinWidth"><term><varname>kmeleon.plugins.favorites.buttonMinWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>10</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-chevron"><term><varname>kmeleon.plugins.favorites.chevron</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+  Whether the favorites toolbar should show the favorites menu under a chevron.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-directory"><term><varname>kmeleon.plugins.favorites.directory</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>-</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="favorites-load"><term><varname>kmeleon.plugins.favorites.load</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
@@ -485,12 +590,84 @@ Default: <literal>True</literal></literallayout>
 </listitem>
 </varlistentry>
 
+<varlistentry id="favorites-maxMenuLength"><term><varname>kmeleon.plugins.favorites.maxMenuLength</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>20</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-menuAutoDetect"><term><varname>kmeleon.plugins.favorites.menuAutoDetect</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-menuFolder"><term><varname>kmeleon.plugins.favorites.menuFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>""</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-newitemFolder"><term><varname>kmeleon.plugins.favorites.newitemFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>""</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="favorites-rebar"><term><varname>kmeleon.plugins.favorites.rebar</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
 Default: <literal>False</literal></literallayout>
 <para>
   Enable/Disable the favorites rebar.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-sortOrder"><term><varname>kmeleon.plugins.favorites.sortOrder</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>17</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-title"><term><varname>kmeleon.plugins.favorites.title</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>Links</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="favorites-toolbarFolder"><term><varname>kmeleon.plugins.favorites.toolbarFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>"Links"</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="fullscreen-auto"><term><varname>kmeleon.plugins.fullscreen.auto</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
 </para>
 </listitem>
 </varlistentry>
@@ -532,6 +709,69 @@ Default: <literal>True</literal></literallayout>
 </listitem>
 </varlistentry>
 
+<varlistentry id="history-dialog-height"><term><varname>kmeleon.plugins.history.dialog.height</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-left"><term><varname>kmeleon.plugins.history.dialog.left</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-maximized"><term><varname>kmeleon.plugins.history.dialog.maximized</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-sortOrder"><term><varname>kmeleon.plugins.history.dialog.sortOrder</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>0</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-top"><term><varname>kmeleon.plugins.history.dialog.top</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-width"><term><varname>kmeleon.plugins.history.dialog.width</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="history-dialog-zoom"><term><varname>kmeleon.plugins.history.dialog.zoom</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolen</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="history-length"><term><varname>kmeleon.plugins.history.length</varname></term>
 <listitem>
 <literallayout>Type: <type>Integer</type>
@@ -553,6 +793,97 @@ Default: <literal>True</literal></literallayout>
 <para>
   This preference can also be controlled from the user interface while
   <link linkend='config-plugins'>configuring plugins</link>.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-buttonIcons"><term><varname>kmeleon.plugins.hotlist.buttonIcons</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>True</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-buttonMaxWidth"><term><varname>kmeleon.plugins.hotlist.buttonMaxWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>35</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-buttonMinWidth"><term><varname>kmeleon.plugins.hotlist.buttonMinWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>10</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-chevron"><term><varname>kmeleon.plugins.hotlist.chevron</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+  Whether the hotlist toolbar should show the hotlist menu under a chevron.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-height"><term><varname>kmeleon.plugins.hotlist.editdialog.height</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-left"><term><varname>kmeleon.plugins.hotlist.editdialog.left</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-maximized"><term><varname>kmeleon.plugins.hotlist.editdialog.maximized</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-top"><term><varname>kmeleon.plugins.hotlist.editdialog.top</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>50</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-width"><term><varname>kmeleon.plugins.hotlist.editdialog.width</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>500</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-editdialog-zoom"><term><varname>kmeleon.plugins.hotlist.editdialog.zoom</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
 </para>
 </listitem>
 </varlistentry>
@@ -594,6 +925,42 @@ Default: <literal>True</literal></literallayout>
 </listitem>
 </varlistentry>
 
+<varlistentry id="hotlist-maxMenuLength"><term><varname>kmeleon.plugins.hotlist.maxMenuLength</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>20</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-menuAutoDetect"><term><varname>kmeleon.plugins.hotlist.menuAutoDetect</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-menuFolder"><term><varname>kmeleon.plugins.hotlist.menuFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>""</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-newitemFolder"><term><varname>kmeleon.plugins.hotlist.newitemFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>""</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="hotlist-rebar"><term><varname>kmeleon.plugins.hotlist.rebar</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
@@ -605,19 +972,55 @@ Default: <literal>False</literal></literallayout>
 </listitem>
 </varlistentry>
 
+<varlistentry id="hotlist-sortOrder"><term><varname>kmeleon.plugins.hotlist.sortOrder</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>209</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="hotlist-toolbarFolder"><term><varname>kmeleon.plugins.hotlist.toolbarFolder</varname></term>
+<listitem>
+<literallayout>Type: <type>String</type>
+Default: <literal>""</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
 <varlistentry id="layers-catch"><term><varname>kmeleon.plugins.layers.catch</varname></term>
 <listitem>
 <literallayout>Type: <type>Boolean</type>
-Default: <literal>False</literal></literallayout>
+Default: <literal>-</literal></literallayout>
 <para>
   Catch window events and apply them to layers.
   (open/close window becomes open/close layer and so on)
 </para>
 <note>
 <para>
-  This preference is experimental, and unfortunately broken in K-Meleon 0.7.
+  This preference is an alias that sets both catchOpen and catchClose.
 </para>
 </note>
+</listitem>
+</varlistentry>
+
+<varlistentry id="layers-catchClose"><term><varname>kmeleon.plugins.layers.catchClose</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="layers-catchOpen"><term><varname>kmeleon.plugins.layers.catchOpen</varname></term>
+<listitem>
+<literallayout>Type: <type>Boolean</type>
+Default: <literal>False</literal></literallayout>
+<para>
+</para>
 </listitem>
 </varlistentry>
 
@@ -642,6 +1045,24 @@ Default: <literal>True</literal></literallayout>
 <para>
   This preference can also be controlled from the user interface while
   <link linkend='config-plugins'>configuring plugins</link>.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="layers-maxwidth"><term><varname>kmeleon.plugins.layers.maxWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>35</literal></literallayout>
+<para>
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="layers-minwidth"><term><varname>kmeleon.plugins.layers.minWidth</varname></term>
+<listitem>
+<literallayout>Type: <type>Integer</type>
+Default: <literal>10</literal></literallayout>
+<para>
 </para>
 </listitem>
 </varlistentry>

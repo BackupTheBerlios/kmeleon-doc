@@ -90,7 +90,6 @@ Opens K-Meleon with <replaceable>url</replaceable> as the first page.
 <sect1 id="about-option"><title>About: Options</title>
 <!-- ============================================================ -->
 
-
 <variablelist>
 <varlistentry>
 <term><ulink url="about:"><filename>about:</filename></ulink></term>
@@ -105,6 +104,14 @@ Opens K-Meleon with <replaceable>url</replaceable> as the first page.
 <listitem>
 <para>
 Display a blank page.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="about:buildconfig"><filename>about:buildconfig</filename></ulink></term>
+<listitem>
+<para>
+Display the build configuration.
 </para>
 </listitem>
 </varlistentry>
@@ -129,6 +136,30 @@ List memory cache entries.
 <listitem>
 <para>
 List disk cache entries.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="about:config"><filename>about:config</filename></ulink></term>
+<listitem>
+<para>
+Configuration screen.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="about:credits"><filename>about:credits</filename></ulink></term>
+<listitem>
+<para>
+Credits to the Mozilla developers.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><ulink url="about:logo"><filename>about:logo</filename></ulink></term>
+<listitem>
+<para>
+Display the K-Meleon logo.
 </para>
 </listitem>
 </varlistentry>
@@ -348,6 +379,15 @@ Opens the javascript console.
 </varlistentry>
 
 
+<varlistentry><term><constant>ID_FILE_SAVE_FRAME_AS</constant></term>
+<listitem>
+<para>
+  Save the current frame.
+</para>
+</listitem>
+</varlistentry>
+
+
 <varlistentry><term><constant>ID_FONT_DECREASE</constant></term>
 <listitem>
 <para>
@@ -361,6 +401,24 @@ Opens the javascript console.
 <listitem>
 <para>
   Increase the font size.
+</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry><term><constant>ID_LINK_ABOUT_PLUGNS</constant></term>
+<listitem>
+<para>
+  Open the about:plugins page.
+</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry><term><constant>ID_LINK_KMELEON_FAQ</constant></term>
+<listitem>
+<para>
+  Go to the K-Meleon FAQ.
 </para>
 </listitem>
 </varlistentry>
@@ -384,6 +442,15 @@ Opens the javascript console.
 </varlistentry>
 
 
+<varlistentry><term><constant>ID_LINK_KMELEON_MANUAL</constant></term>
+<listitem>
+<para>
+  Open the K-Meleon User's Guide and Reference Manual.
+</para>
+</listitem>
+</varlistentry>
+
+
 <varlistentry><term><constant>ID_MANAGE_PROFILES</constant></term>
 <listitem>
 <para>
@@ -402,10 +469,28 @@ Opens the javascript console.
 </varlistentry>
 
 
+<varlistentry><term><constant>ID_NAV_FORCE_RELOAD</constant></term>
+<listitem>
+<para>
+  Reload, download, the current page without using the cache.
+</para>
+</listitem>
+</varlistentry>
+
+
 <varlistentry><term><constant>ID_NAV_FORWARD</constant></term>
 <listitem>
 <para>
   Go forward one page.
+</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry><term><constant>ID_NAV_GO</constant></term>
+<listitem>
+<para>
+  Go to the address writen in the URL bar.
 </para>
 </listitem>
 </varlistentry>
@@ -556,6 +641,15 @@ Opens the javascript console.
 </varlistentry>
 
 
+<varlistentry><term><constant>ID_VIEW_FRAME_INFO</constant></term>
+<listitem>
+<para>
+  View the frame information.
+</para>
+</listitem>
+</varlistentry>
+
+
 <varlistentry><term><constant>ID_VIEW_FRAME_SOURCE</constant></term>
 <listitem>
 <para>
@@ -573,15 +667,13 @@ Opens the javascript console.
 </listitem>
 </varlistentry>
 
-<!--
-<varlistentry><term><constant>ID_VIEW_INFO</constant></term>
+<varlistentry><term><constant>ID_VIEW_PAGE_INFO</constant></term>
 <listitem>
 <para>
-
+  View the page information.
 </para>
 </listitem>
 </varlistentry>
--->
 
 <varlistentry><term><constant>ID_VIEW_SOURCE</constant></term>
 <listitem>
@@ -634,8 +726,149 @@ Opens the javascript console.
 <sect1 id="accel-cfg"><title>Accelerator Definition File</title>
 <!-- ============================================================ -->
 
+<!-- ............................................................ -->
+<sect2 id="accel-intro"><title>Introducion</title>
+<!-- ............................................................ -->
+
 <para>
+The accel.cfg file contains the keyboard accelerator commands.
 </para>
+
+</sect2>
+
+
+<!-- ............................................................ -->
+<sect2 id="accel-def"><title>Defining Accelerators</title>
+<!-- ............................................................ -->
+
+<para>
+1. A line that starts with # is a comment and is ignored.
+</para>
+
+<para>
+Example:
+</para>
+
+<programlisting>
+# this is a comment
+this is not
+</programlisting>
+
+<para> 
+2. A line with a = on it declares a keyboard accelerator. 
+Everything before the = is the keyboard shortcut,
+everything after the = is K-Meleon command to execute.
+</para>
+
+<para>
+Example:
+</para>
+
+<programlisting>
+VK_F1 = ID_LINK_KMELEON_MANUAL
+VK_ESCAPE = ID_NAV_STOP
+</programlisting>
+
+<para> 
+3. A keyboard shortcut can include one or more of CTRL, SHIFT, and ALT.
+</para>
+
+<para>
+Example:
+</para>
+
+<programlisting>
+CTRL N = ID_NEW_BROWSER
+
+ALT VK_LEFT  = ID_NAV_BACK
+ALT VK_RIGHT = ID_NAV_FORWARD
+
+CTRL SHIFT R = ID_NAV_FORCE_RELOAD
+</programlisting>
+
+<para> 
+4. The "key" part of a keyboard shortcut can be a regular character key
+(such 'A' to 'Z' or '0' to '9') or a virtual key, it can also be one of 
+LButton, MButton or RButton to use a mouse button.
+</para>
+
+<para>
+The current list of virtual keys understood by K-Meleon:
+</para>
+
+<programlisting>
+VK_ESCAPE
+VK_LEFT
+VK_RIGHT
+VK_F1
+VK_F2
+VK_F3
+VK_F4
+VK_F5
+VK_F6
+VK_F7
+VK_F8
+VK_F9
+VK_F10
+VK_F11
+VK_F12
+VK_HOME
+VK_END
+VK_PRIOR
+VK_NEXT
+VK_PAGE_UP
+VK_PAGE_DOWN
+VK_UP
+VK_DOWN
+VK_INSERT
+VK_DELETE
+VK_SPACE
+VK_HELP
+VK_EXECUTE
+VK_SELECT
+VK_PRINT
+VK_SNAPSHOT
+VK_PLUS
+VK_MINUS
+VK_COMMA
+VK_PERIOD
+VK_EQUALS
+VK_BACK
+VK_TAB
+VK_CLEAR
+VK_RETURN
+VK_MULTIPLY
+VK_ADD
+VK_SUBTRACT
+VK_DECIMAL
+VK_DIVIDE
+VK_SEPARATOR
+VK_PAUSE
+VK_CAPITAL
+VK_MENU
+VK_LWIN
+VK_RWIN
+VK_APPS
+VK_NUMPAD0
+VK_NUMPAD1
+VK_NUMPAD2
+VK_NUMPAD3
+VK_NUMPAD4
+VK_NUMPAD5
+VK_NUMPAD6
+VK_NUMPAD7
+VK_NUMPAD8
+VK_NUMPAD9
+VK_NUMLOCK
+VK_SCROLL
+</programlisting>
+
+<para> 
+5. The "command" part of a keyboard shortcut can be a 
+Command ID (listed above) or a plugin command (listed below).
+</para>
+
+</sect2>
 
 <!-- ............................................................ -->
 <sect2 id="accel-plugin-cmd"><title>Plugin commands for accelerators</title>
@@ -668,6 +901,16 @@ favorites(edit)
 <listitem>
 <programlisting>
 fullscreen()
+</programlisting>
+</listitem>
+</varlistentry>
+
+<varlistentry id="accel-hotlist-cmd"><term>hotlist</term>
+<listitem>
+<programlisting>
+hotlist(add)
+hotlist(config)
+hotlist(edit)
 </programlisting>
 </listitem>
 </varlistentry>
@@ -750,6 +993,32 @@ a menu {
 </programlisting>
 
 <para>
+You can create any number of menus with any names you wish.  To be
+able to show a context menu as you right-click on a link or image, for
+instance, you need to use some pre-defined names, though.
+</para>
+
+<para>
+This is the current list of menu names that have special meaning to K-Meleon:
+</para>
+
+<programlisting>
+Main
+DocumentPopup
+DocumentImagePopup
+TextPopup
+LinkPopup
+ImagePopup
+ImageLinkPopup
+FrameDocumentPopup
+FrameDocumentImagePopup
+FrameLinkPopup
+FrameImagePopup
+FrameImageLinkPopup
+LayerButtonPopup
+</programlisting>
+
+<para>
 3. A line that has a } on it ends a menu. Everything else on the line
 is ignored.  
 </para> 
@@ -802,6 +1071,7 @@ Toolbars {
 submenu should have been defined in the file above the place it's
 used.  
 </para>
+
 <para>
 Example:
 </para>
@@ -854,11 +1124,19 @@ actually does with it is anyone's guess.
 </para>
 
 <para>
+Most plugins parse the command string passed to it.
+If the string contains a comma everything to the left is
+considered the command and everything to the right the text
+to show in the menu.
+A list of commands available for the current plugins is shown below.
+</para>
+
+<para>
 Example:
 </para>
 
 <programlisting>
-bookmarks()
+    history(View, View &amp;History\tCtrl+H)
 </programlisting>
 
 <para>
@@ -893,6 +1171,7 @@ Do Nothing\tAlt+N = 0
 <programlisting>
 bookmarks()
 bookmarks(add)
+bookmarks(addlink)
 bookmarks(addtoolbar)
 bookmarks(config)
 bookmarks(edit)
@@ -905,6 +1184,7 @@ bookmarks(edit)
 <programlisting>
 favorites()
 favorites(add)
+favorites(addlink)
 favorites(config)
 favorites(edit)
 </programlisting>
@@ -932,7 +1212,9 @@ history()
 <programlisting>
 hotlist()
 hotlist(add)
+hotlist(addlink)
 hotlist(config)
+hotlist(edit)
 </programlisting>
 </listitem>
 </varlistentry>
