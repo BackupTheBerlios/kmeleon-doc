@@ -1,0 +1,674 @@
+<chapter id="advanced-usage"><title>Advanced Usage</title>
+
+<para>
+</para>
+
+<!-- ============================================================ -->
+<sect1 id="kmeleon-loader"><title>The Symbiotic Loader</title>
+<!-- ============================================================ -->
+
+<para>
+  The symbiotic loader is an optional feature designed to reduce
+  K-Meleon's load time. The loader accomplishes this by preloading
+  portions of K-Meleon into memory when the operating system
+  starts. This reduces the amount of time it takes for the rest of the
+  browser to load when a user actually starts the browser. The loader
+  can be configured to four different settings that use an increasing
+  amount of memory.
+</para>
+
+<!-- ............................................................ -->
+<sect2 id="loader-install"><title>Installation</title>
+<!-- ............................................................ -->
+
+<para>
+  The loader is an optional component that can be included when you
+  install K-Meleon. When you reach the Installation Options window in
+  the Setup process, the default setting for the K-Meleon loader is
+  not to install. Check the box next to K-Meleon loader (for faster
+  startup times) in order to install the loader with K-Meleon. A
+  short-cut to the loader will automatically be copied to your Startup
+  folder during K-Meleon's installation so it will run every time that
+  Windows starts. If you do not check the box at that point and later
+  decide to install the loader, you will have to reinstall K-Meleon to
+  enable the loader.  
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="loader-configuration"><title>Configuration</title>
+<!-- ............................................................ -->
+
+<para>
+  The loader is active if the K-Meleon icon appears in the System
+  Tray. To access the configuration settings, right-click on the
+  K-Meleon icon and select Config. Use the slider to select the level
+  of preloading that you wish to use and click on OK to save your
+  change.
+</para>
+
+<para>
+  The higher the level of preloading that you select, the more memory
+  that K-Meleon will use to to preload components. However, the higher
+  levels of preloading will provide you with a much quicker response
+  when you click on the System Tray icon or any icons on the Desktop
+  or Start Menu.
+</para>
+
+<para>
+  The loader supports 4 levels of preloading. The default level is
+  Fast. These Preload Configurations include:
+</para>
+
+<para>
+Setting Preload Component(s)
+None Don't preload any components
+Fast (Default) Preload Browser Engine
+Faster Precreate Window
+Preload Browser Engine
+Extreme Preload Start Page
+Precreate Window
+Preload Browser Engine
+
+This is only recommended if you use a simple, text based, start page.
+</para>
+
+<para>
+  When you exit K-Meleon, the browser window will close. However,
+  portions of the browser will remain in memory, based on your
+  setting, until the browser is used again or you exit Windows.
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="disable-loader"><title>Disable the Loader</title>
+<!-- ............................................................ -->
+
+<para>
+To disable the loader, complete the following steps:
+</para>
+
+<para>
+1. Right-click on the K-Meleon Loader icon in the System Tray located in the lower right-hand corner of your screen.
+
+2. Select Exit.
+
+3. Delete the short-cut to the K-Meleon Loader from the Startup directory in Windows.
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="loader-issues"><title>Known Issues</title>
+<!-- ............................................................ -->
+
+<para>
+  K-Meleon does not recognize changes in the menus, accelerators or
+  plugins until the browser is exited. Because K-Meleon is always
+  loaded into memory by the loader, any changes in the menus,
+  accelerators or plugins will not be recognized until you completely
+  close the browser and exit the loader.  
+</para>
+
+</sect2>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="profiles"><title>Profiles</title>
+<!-- ============================================================ -->
+
+<para>
+
+</para>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="skins"><title>Themes and Skins</title>
+<!-- ============================================================ -->
+
+<para>
+</para>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="type-ahead"><title>Type-Ahead Find</title>
+<!-- ============================================================ -->
+
+<para>
+  Type-ahead find is a quick way to navigate around in a document
+  using only the keyboard.  Even though the name suggests using it for
+  text searching, many people also find it useful for moving the
+  cursor to a place they already see, much faster than by using the
+  arrow keys.
+</para>
+
+<para>
+  With the cursor somewhere in the browser window [Ed. note: this
+  needs to be clearer!], simply type a few characters of the link that
+  you wish to go to, and the cursor will snap to the first link that
+  contains those characters.  If you mistyped a character, simply type
+  backspace and type the correct one.  To cancel a find process, you
+  can either hit Esc or do something else.
+</para>
+
+<para>
+  Normally, this only searches links; type a "/" character first to
+  search through all text.  To find the next instance of your search,
+  either type Ctrl-G, F3, or the last letter of your search (unless
+  there is a match that includes the repeated letter, in which case it
+  will go there first).  Shift-Ctrl-G or Shift-F3 will find the
+  previous instance.
+</para>
+
+<para>
+  As an example of this, suppose that you're in a web page that
+  contains links with the words "could", "coanda effect", "cool", and
+  "coxwain" in them.  Typing "co" with the cursor at the beginning of
+  the page will select the "could" link, typing an additional "o"
+  (making "coo") will bring the cursor to "cool", and typing "o"
+  additional times will cycle through all four of the links.
+</para>
+
+<para>
+  Of course, this doesn't work if you're in an edit box in a form;
+  type the Tab key to get out of the edit box first.
+</para>
+
+<para>
+  [Note: before 1.0 release, check <ulink type="http"
+  url="http://www.mozilla.org/projects/ui/accessibility/typeaheadfind.html">http://www.mozilla.org/projects/ui/accessibility/typeaheadfind.html</ulink>
+  and see if any of the to-do items -- specifically, Ctrl-' and Ctrl-/
+  -- have been done!]
+</para>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="layers"><title>Layers</title>
+<!-- ============================================================ -->
+
+<para>
+  The Layered Windows Plugin, layers.dll, tries to mimic tabbed
+  windows. It keeps a stack of Windows in layers --- one on top of the
+  other --- all with the same size and position. Switching to a new
+  view is done by simply bringing a new window to front. By keeping
+  all but one of the windows invisible the taskbar is kept
+  clutter-free. Even though you still have as many browser windows as
+  usually.. the result is an illusion that may or may not fool you.
+</para>
+
+<para>
+  More traditional implementations of "Tabs" are made in the main
+  application. By encapsulating the rendering engine, and use it as a
+  component, they can then give the renderer any graphics area to draw
+  the pages at. Since the "Layers" have been added through a plugin
+  this not an option. K-Meleon will still give Gecko, the Mozilla
+  rendering engine, the full client area of a browser window to draw
+  pages at. The layers plugin listens to messages passing by the
+  browser window, hijacks some of them and issues a few new ones, and
+  that way keeps the windows at the same position with only one of
+  them visible at any time. Biggest benefit with this approach is that
+  the K-Meleon core had not to be changed to support tab-like
+  browsing. With the plugin disabled there is no traces of it in form
+  of memory or CPU usage.
+</para>
+
+<para>
+  With the layers plugin enabled 
+  you can have a menu with all layers of the current window and choose
+  from the list what layer to switch to. This looks and behaves a bit
+  like an <acronym>MDI</acronym> with all sub-windows maximized. There
+  is also a buttonbar that can be activated and styled at wish. This
+  gives a more tab-like behavior. Finally the plugin offers the
+  <function>layers(next)</function>,
+  <function>layers(prev)</function>, <function>layers(last)</function>
+  and <function>layers(X)</function> functions as means to switch
+  layer; bind them to any keys you want.
+</para>
+
+<para>
+  With the default settings (Accel.cfg) ...
+
+  <keycombo><keysym>Ctrl</keysym><keysym>T</keysym></keycombo>,
+  <keycombo><keysym>Ctrl</keysym><keysym>W</keysym></keycombo>,
+  <keycombo><keysym>Ctrl</keysym><keysym>F4</keysym></keycombo>,
+  <keycombo><keysym>Ctrl</keysym><keysym>Tab</keysym></keycombo>,
+  <keycombo><keysym>Ctrl</keysym><keysym>Shift</keysym><keysym>Tab</keysym></keycombo>, ...
+
+  See the <link linkend='accel-layers-cmd'>accelerator configuration reference for layers</link>.
+</para>
+
+<para>
+  Layers menu (Menus.cfg).
+  See the <link linkend='menus-layers-cmd'>menu configuration reference for layers</link>.
+</para>
+
+<para>
+  The layers buttonbar can be toggled on or off by the
+  <menuchoice>
+    <guimenu>View</guimenu>
+    <guisubmenu>Toolbars</guisubmenu>
+    <guimenuitem>Layers</guimenuitem>
+  </menuchoice> menu choice, or by setting the
+  <link linkend='layers-rebar'><varname>kmeleon.plugin.layers.rebar</varname></link> 
+  preference.
+
+  To configure the look of the layers buttonbar and buttons see the
+  <link linkend='layers-title'><varname>kmeleon.plugin.layers.title</varname></link>,
+  <link linkend='layers-width'><varname>kmeleon.plugin.layers.width</varname></link>,
+  <link linkend='layers-style'><varname>kmeleon.plugin.layers.style</varname></link>,
+  and <link linkend='layers-numbers'><varname>kmeleon.plugin.layers.numbers</varname></link>
+  preferences.
+
+  Right clicking on a layer button brings up the menu defined as
+  <guimenu>LayerButtonPopup</guimenu> (Menus.cfg).
+</para>
+
+<para>
+  There is no way to add configurable graphical buttons to the layers
+  bar, nor are there any toolbar buttons for layers on the default
+  toolbar. You can either add your buttons to the main toolbar or
+  build a new toolbar for your graphical buttons by editing the
+  toolbars.cfg file.
+  See the <link linkend='toolbars-plugin-cmd'>toolbar configuration reference for layers</link>.
+</para>
+
+<para>
+  Even more specific configuration can be done by writing macros that
+  calls the layers plugin. See the advanced section on <link
+  linkend='macros'>macros</link> and the <link
+  linkend='macro-layers-cmd'>macro configuration reference for
+  layers</link>.
+</para>
+
+</sect1>
+
+
+<!-- ============================================================ -->
+<sect1 id="bookmarks"><title>Bookmarks / Favorites / Hotlist</title>
+<!-- ============================================================ -->
+
+<para>
+</para>
+
+<figure><title><ulink type="http" url="images/Bookmarks.png">The Bookmarks Editor</ulink></title>
+<graphic format="PNG" srccredit="pobelly" fileref="images/t_Bookmarks"/>
+</figure>
+
+<graphic format="PNG" srccredit="pobelly" fileref="images/Bookmarks_configure"/>
+
+<graphic format="PNG" srccredit="pobelly" fileref="images/Favorites_configure"/>
+
+<graphic format="PNG" srccredit="pobelly" fileref="images/Hotlist_configure"/>
+
+<!-- ............................................................ -->
+<sect2 id="ns-bookmarks"><title>Netscape Bookmarks</title>
+<!-- ............................................................ -->
+
+<para>
+  If you are currently using <application>Mozilla</application>,
+  <application>Netscape</application> 4, 6, or 7,
+  <application>Phoenix</application>, or <application>Beonex
+  Communicator</application> you are able to make use of your
+  bookmarks in <application>K-Meleon</application> by enabling the
+  "bookmarks" plugin.
+</para>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<sect3 id="ns-bookmarks-import"><title>Importing the bookmarks file</title>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<para>
+  The way your bookmarks are imported is dependent both on what
+  Mozilla-based browser you want to import the bookmarks of and also
+  on your version of Windows.
+</para>
+
+
+<table frame='all'><title>Windows 95, 98, 98 SE, Me Bookmarks</title>
+<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+<thead>
+<row>
+  <entry>Browser</entry>
+  <entry>Bookmarks location</entry>
+</row>
+</thead>
+<tbody>
+<row>
+  <entry><application>Netscape 4.xx</application></entry>
+  <entry><filename>C:\Program Files\Netscape\Users\PROFILE_NAME\</filename></entry>
+</row>
+<row>
+  <entry><application>Netscape 6.x.x, 7.x, &amp; Mozilla</application></entry>
+  <entry><filename>C:\Windows\Application Data\Mozilla\Profiles\PROFILE_NAME\[random string].slt</filename></entry>
+</row>
+<row>
+  <entry><application>Phoenix</application></entry>
+  <entry><filename>C:\Windows\Application Data\phoenix\Profiles\PROFILE_NAME\[random string].slt</filename></entry>
+</row>
+<row>
+  <entry><application>Beonex Communicator</application></entry>
+  <entry><filename>C:\Windows\Application Data\beonex\Profiles\PROFILE_NAME\[random string].slt</filename></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<table frame='all'><title>Windows NT 4.0 Bookmarks</title>
+<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+<thead>
+<row>
+  <entry>Browser</entry>
+  <entry>Bookmarks location</entry>
+</row>
+</thead>
+<tbody>
+<row>
+  <entry><application>Netscape 4.xx</application></entry>
+  <entry><filename>C:\Program Files\Netscape\Users\PROFILE_NAME\</filename></entry>
+</row>
+<row>
+  <entry><application>Netscape 6.x.x, 7.x, &amp; Mozilla</application></entry>
+  <entry><filename>C:\Winnt\Profiles\&lt;user name&gt;\Application Data\Mozilla\Profiles\&lt;profile name&gt;\*.slt</filename></entry>
+</row>
+<row>
+  <entry><application>Phoenix</application></entry>
+  <entry><filename>C:\Winnt\Profiles\&lt;user name&gt;\Application Data\Phoenix\Profiles\&lt;profile name&gt;\*.slt</filename></entry>
+</row>
+<row>
+  <entry><application>Beonex Communicator</application></entry>
+  <entry><filename>C:\Winnt\Profiles\&lt;user name&gt;\Application Data\Beonex\Profiles\&lt;profile name&gt;\*.slt</filename></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<table frame='all'><title>Windows 2000 &amp; XP Bookmarks</title>
+<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+<thead>
+<row>
+  <entry>Browser</entry>
+  <entry>Bookmarks location</entry>
+</row>
+</thead>
+<tbody>
+<row>
+  <entry><application>Netscape 4.xx</application></entry>
+  <entry><filename>C:\Program Files\Netscape\Users\PROFILE_NAME\</filename></entry>
+</row>
+<row>
+  <entry><application>Netscape 6.x.x, 7.x, &amp; Mozilla</application></entry>
+  <entry><filename>C:\Documents and Settings\[Windows Login Name]\Application Data\Mozilla\Profiles\PROFILE_NAME\[random string].slt\</filename></entry>
+</row>
+<row>
+  <entry><application>Phoenix</application></entry>
+  <entry><filename>C:\Documents and Settings\[Windows Login Name]\Application Data\Phoenix\Profiles\PROFILE_NAME\[random string].slt\</filename></entry>
+</row>
+<row>
+  <entry><application>Beonex Communicator</application></entry>
+  <entry><filename>C:\Documents and Settings\[Windows Login Name]\Application Data\Beonex\Profiles\PROFILE_NAME\[random string].slt\</filename></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<para>
+  After you have found the correct directory, highlight the file
+  bookmark.html (NS 4) /bookmarks.html (NS 6/7Moz/Phoenix/Beonex), as
+  shown below:
+</para>
+
+<figure><title><ulink type="http" url="images/profile_folder.png">A sample profile folder with Netscape 4.xx's bookmark.html highlighted.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/profile_folder"/>
+</figure>
+
+<para>
+  Right click on bookmarks.html or bookmark.html and send the file to
+  the My Documents folder, as shown below:
+</para>
+
+<figure><title><ulink type="http" url="images/right_click.png">Right Clicking demonstrated.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/right_click"/>
+</figure>
+
+<para>
+  Launch K-Meleon. You will be greeted with this prompt:
+</para>
+
+<figure><title><ulink type="http" url="images/nsprompt.png">Import Netscape Bookmarks Prompt.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/nsprompt"/>
+</figure>
+
+<para>
+  If you want to import bookmark.html or bookmarks.html, press yes. If
+  not, press no. If you choose yes, a prompt asking you to search for
+  bookmark.html or bookmarks.html will appear:
+</para>
+
+<figure><title><ulink type="http" url="images/nsprompt2.png">A prompt asking you to find bookmark.html/bookmarks.html.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/nsprompt2"/>
+</figure>
+
+<para>
+  If you choose no, K-Meleon will create a new bookmarks file for
+  you. This prompt will confirm your chosen action:
+</para>
+
+<figure><title><ulink type="http" url="images/nsprompt3.png">A prompt confirming the creation of a bookmarks list.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/nsprompt3"/>
+</figure>
+
+</sect3>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<sect3 id="ns-bookmarks-usage"><title>Using, editing, &amp; configuring bookmarks</title>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<para>
+  Now that bookmarks are set up, let's look at other options such as
+  using bookmarks within the browser, editing them, plus extra
+  configuration options.
+</para>
+
+<para>
+  If you wish to add a bookmark, press CTRL-D or go to Bookmarks,
+  Add. K-Meleon should look like this:
+</para>
+
+<figure><title><ulink type="http" url="images/add.png">Adding a bookmark to K-Meleon.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/add"/>
+</figure>
+
+<para>
+  The bookmark editor is a very powerful tool to edit, change, or move
+  bookmarks and folders. To open it, go to Bookmarks, Edit. The editor
+  should look like this:
+</para>
+
+<figure><title><ulink type="http" url="images/bmarkman.png">K-Meleon's bookmark manager.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/bmarkman"/>
+</figure>
+
+<para>
+  When you highlight a bookmark listing you are given the:
+</para>
+
+<itemizedlist>
+<listitem><para>The date the bookmark was made</para></listitem>
+<listitem><para>The web address</para></listitem>
+<listitem><para>The date of the last bookmark visit</para></listitem>
+</itemizedlist>
+
+<para>
+  It should all look like this:
+</para>
+
+<figure><title><ulink type="http" url="images/bmarkman2.png">Bookmark properties highlighted.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/bmarkman2"/>
+</figure>
+
+<para>
+  When you right click, a list of options is given. They are:
+</para>
+
+<itemizedlist>
+<listitem><para>Open in current browser window</para></listitem>
+<listitem><para>Open in background</para></listitem>
+<listitem><para>New Folder</para></listitem>
+<listitem><para>New Bookmark</para></listitem>
+<listitem><para>New Separator</para></listitem>
+<listitem><para>Set as toolbar folder</para></listitem>
+<listitem><para>Set as New boonmark folder</para></listitem>
+<listitem><para>Set as New boonmark menu</para></listitem>
+<listitem><para>Delete</para></listitem>
+</itemizedlist>
+
+<para>
+  The right click menu should look like this:
+</para>
+
+<figure><title><ulink type="http" url="images/bmarkman3.png">The bookmark editor's right-click options.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/bmarkman3"/>
+</figure>
+
+<para>
+  Now we will review each option one by one.
+</para>
+
+<itemizedlist>
+<listitem><para>Open in current browser window: The bookmark is opened in the current browser window used at the time.</para></listitem>
+<listitem><para>Open in background: The bookmark is opened in a new background window.</para></listitem>
+<listitem><para>New Folder: A new folder is created for bookmarks to be put in.</para></listitem>
+<listitem><para>New Bookmark: This action creates a new bookmark.</para></listitem>
+<listitem><para>New Separator: This tool is used to divide sects of bookmarks.</para></listitem>
+<listitem><para>Set as toolbar folder: This fills the toolbar with links that are in a selected folder.</para></listitem>
+<listitem><para>Set as New bookmark folder: This allows new bookmarks to be stored in another folder of the user's choice.</para></listitem>
+<listitem><para>Set as New bookmark menu: This option allows one folder to take over the bookmarks menu, hiding all other folders &amp; bookmarks.</para></listitem>
+<listitem><para>Delete: This act purges bookmarks and folders.</para></listitem>
+</itemizedlist>
+
+
+<para>
+  Besides the right-click options, there are four other buttons that
+  have functions in the bookmark editor. They are:
+</para>
+
+<itemizedlist>
+<listitem><para>Help: Gives a list of Keyboard shortcuts to be used within the bookmark editor.</para></listitem>
+<listitem><para>Import Favorites: Allows Microsoft Internet Explorer's Favorites to be used as bookmarks if needed.</para></listitem>
+<listitem><para>OK: Used to confirm change to bookmarks or folders.</para></listitem>
+<listitem><para>Cancel: If you elect not to change anything or want to purge any non-confirmed changes made, use this button.</para></listitem>
+</itemizedlist>
+
+
+<para>
+  There are extra configuration options that control the bookmarks
+  themselves. They can be found under Bookmarks, Config. The
+  configuration should look like this:
+</para>
+
+<figure><title><ulink type="http" url="images/config.png">The configuration menu.</ulink></title>
+<graphic format="PNG" srccredit="Joshua Holman" fileref="images/config"/>
+</figure>
+
+<para>
+  If you move the bookmarks file while using K-Meleon, you can change
+  the location of the file by clicking the button with three dots. You
+  can toggle the bookmarks toolbar by checking the box. Max toolbar
+  button size and menu spillover length can be configured as desired.
+</para>
+
+</sect3>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="ie-favorites"><title>Internet Explorer Favorites</title>
+<!-- ............................................................ -->
+
+<para>
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="op-hotlist"><title>Opera Hotlist</title>
+<!-- ............................................................ -->
+
+<para>
+</para>
+
+</sect2>
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="macros"><title>Macros</title>
+<!-- ============================================================ -->
+
+<para>
+</para>
+
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="plugins"><title>Using third party plugins</title>
+<!-- ============================================================ -->
+
+<para>
+</para>
+
+<!-- ............................................................ -->
+<sect2 id="java"><title>Java</title>
+<!-- ............................................................ -->
+
+<para>
+  You must first install the Java Runtime Environment (JRE) to run
+  Java applets in K-Meleon. Once installed, K-Meleon automatically
+  detects your JRE installation and no other configuration is
+  necessary.
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="mouse-gestures"><title>Mouse Gestures</title>
+<!-- ............................................................ -->
+
+<para>
+</para>
+
+</sect2>
+
+<!-- ............................................................ -->
+<sect2 id="ns-plugins"><title>Netscape/Mozilla plugins</title>
+<!-- ............................................................ -->
+
+<para>
+</para>
+
+</sect2>
+</sect1>
+
+<!-- ============================================================ -->
+<sect1 id="external"><title>External control of K-Meleon</title>
+<!-- ============================================================ -->
+
+<para>
+
+</para>
+
+</sect1>
+
+</chapter>
